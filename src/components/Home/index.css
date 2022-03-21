@@ -1,0 +1,483 @@
+.Home {
+  position: relative;
+  overflow: visible;
+}
+.Information {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 30%;
+  margin-left: 7%;
+  top: 0;
+  color: white;
+  justify-content: center;
+  padding: 5vh 0;
+  line-height: 1.25;
+  overflow: visible;
+}
+.Wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Name-Wrapper {
+  margin-bottom: 15px;
+}
+.Name-Container {
+  font-family: "Proxima Nova Th" !important;
+  font-size: 120px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  position: relative;
+}
+.Name {
+  z-index: 1;
+  line-height: 100px;
+}
+.Name-Lightning {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+.Lightning {
+  width: 80px;
+  height: calc(100% + 10px);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@keyframes lightningStrike {
+  0% {
+    background-image: url("/public/photos/lightning/1.png");
+  }
+  20% {
+    background-image: url("/public/photos/lightning/2.png");
+  }
+  50% {
+    background-image: url("/public/photos/lightning/3.png");
+  }
+  70% {
+    background-image: url("/public/photos/lightning/5.png");
+  }
+  80% {
+    background-image: url("/public/photos/lightning/4.png");
+  }
+  100% {
+    background-image: url("/public/photos/lightning/5.png");
+  }
+}
+.Paragraph-Wrapper {
+  margin-bottom: 15px;
+}
+.Paragraph {
+  width: 100%;
+  text-align: left;
+}
+.Player-Wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 20px;
+  max-width: 415px;
+}
+.Player-Assest {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: #e7d3ff;
+  box-shadow: 0 0 28px #6219fd;
+  margin-right: 5px;
+  position: absolute;
+}
+.Player-Container {
+  width: 100%;
+  background: linear-gradient(
+    93.44deg,
+    rgba(78, 0, 206, 0.3) 32.45%,
+    rgba(35, 14, 68, 0.282) 92.17%
+  );
+  box-shadow: inset 6px 0 7px rgb(181 70 250 / 25%);
+  padding: 16px 0;
+  margin-left: 11px;
+  padding-left: 45px;
+}
+.Player-Text {
+  font-size: 20px;
+}
+.HasFlag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: inline-block;
+  width: 6px;
+  height: 100%;
+  background: #e7d3ff;
+  box-shadow: 0 0 28px 2px #6219fd;
+  margin-right: 5px;
+}
+.Player-Number {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.Download-Wrapper {
+  height: 50px;
+  margin-bottom: 15px;
+  max-width: 415px;
+}
+
+.Download-Container {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+.Download-Button {
+  width: 100px;
+}
+.Download-Content {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  min-width: 90px;
+  justify-content: space-evenly;
+}
+
+.Download-Icon {
+  width: 20px;
+  height: 20px;
+}
+.Download-Name {
+}
+.Address-Wrapper {
+  width: 100%;
+}
+.Address-Container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.THG-Wrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.THC-Wrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: rgba(111, 66, 193, 0.3);
+  box-shadow: 0 0 100px 3px #b690fc;
+  width: 100%;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+td {
+  display: table-cell;
+  border-color: #c7a0f7;
+  border-style: solid;
+  border-width: 0.5px;
+}
+.Table-Tag {
+  text-align: center;
+  vertical-align: top;
+  text-shadow: 1px 1px #6610f2;
+  padding: 0 5px;
+  font-weight: 400;
+}
+.Table-Key {
+  text-align: left;
+  vertical-align: top;
+  text-shadow: 1px 1px #6610f2;
+  padding: 0 5px;
+  min-width: fit-content;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.Copy-Container {
+  position: relative;
+}
+.Copy-Icon {
+}
+.Copy-Box {
+  background-color: #0003;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0 5px;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 0;
+  font-size: 12px;
+}
+.Copy-Box::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #0003 transparent transparent;
+}
+
+.Trade-Container {
+  width: 100%;
+}
+.Button {
+  background: #6728cd;
+  box-shadow: 0px 0px 9px rgb(63 0 143 / 87%);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+}
+
+.AppearAnimation {
+  /* opacity: 0; */
+  animation: fadeUpIn 0.3s ease-in;
+}
+
+@keyframes fadeUpIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.Hide {
+  opacity: 0;
+}
+
+.Trade-Wrapper {
+  flex-flow: column;
+}
+.Achor {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1699px) {
+  .Information {
+    width: 40%;
+  }
+  .Name-Container {
+    font-size: 100px;
+  }
+  .Name {
+    line-height: 90px;
+  }
+  .Name-Lightning {
+    justify-content: flex-start;
+  }
+  .Lightning {
+    width: 80px
+  }
+}
+@media (max-width: 1199px) {
+  .Information {
+    width: 50%;
+    margin-left: 40px;
+    padding: 5vh 0;
+  }
+  .Name-Container {
+    font-size: 90px;
+  }
+  .Name {
+    line-height: 70px;
+  }
+  .Name-Lightning {
+    justify-content: flex-start;
+  }
+  .Lightning {
+    width: 70px;
+  }
+  .Player-Wrapper {
+    max-width: 330px;
+  }
+  .Download-Wrapper {
+    max-width: 240px;
+    height: fit-content;
+  }
+  .Download-Container {
+    flex-flow: row wrap;
+    padding: 0;
+  }
+  .BulletButton-Wrapper:last-child {
+    margin-top: 10px;
+  }
+  .Address-Container {
+    display: flex;
+    flex-flow: row;
+  }
+  .THG-Wrapper {
+    margin-right: 40px;
+  }
+  .Button-Wrapper {
+    align-items: flex-start;
+  }
+  .Button {
+    width: 390px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .Home {
+    overflow: visible;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    height: fit-content;
+    background-color: #412b5b;
+  }
+  .Information {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px 20px 0px;
+    text-align: center;
+  }
+  
+  .Wrapper {
+    max-width: 900px;
+  }
+  .Name-Wrapper {
+    line-height: 0.7;
+  }
+  .Name-Container {
+    font-size: 70px;
+  }
+  .Name {
+    z-index: 1;
+    line-height: 60px;
+  }
+  .Name-Lightning {
+    justify-content: center;
+  }
+  .Lightning {
+    width: 65px;
+  }
+  .Paragraph {
+    text-align: center;
+  }
+  .Player-Wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 460px;
+  }
+  .Player-Text {
+    font-size: 20px;
+  }
+  .Player-Number {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .Download-Wrapper {
+    height: fit-content;
+    margin-bottom: 20px;
+    max-width: 280px;
+  }
+  .Download-Container {
+    padding: 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .Address-Wrapper {
+    width: 100%;
+  }
+  .Address-Container {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-flow: column;
+  }
+  .THG-Wrapper {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .THC-Wrapper {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  table {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .Button-Wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .Button {
+    width: 100%;
+    max-width: 460px;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .Lightning {
+    width: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .Information {
+    padding: 120px 15px 20px 15px;
+  }
+  .Name-Container {
+    font-size: 60px;
+    justify-content: center;
+  }
+  .Name-Lightning {
+    justify-content: center;
+  }
+  .Lightning {
+    width: 55px;
+  }
+}

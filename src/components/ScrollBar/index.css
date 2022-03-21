@@ -1,0 +1,98 @@
+.ScrollBar-Wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  z-index: 90;
+  transition: all .5s;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.ScrollBar_In {
+  animation: dropDownTop 0.5s ease;
+}
+.ScrollBar_Out {
+  animation: rollUpTop 0.5s ease;
+  opacity: 0;
+  z-index: -1;
+}
+.ScrollBar-Container {
+  width: 100vw;
+  min-height: 60px;
+  max-height: 120px;
+  height: 10vh;
+  background-color: rgba(30, 18, 49, 0.8);
+  padding: 0px 30px;
+  transition: all .5s;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.ScrollBar-Logo {
+  height: 100%;
+  width: 80px;
+}
+.ScrollBar-Menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+.ScrollBar-Button {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.ScrollBar-Button:hover {
+  color: #00a9ff;
+}
+.ScrollBar-Button__Active {
+  color: #00a9ff;
+  border: 2px solid #00a9ff;
+  border-radius: 3px;
+  transform: skewX(-6deg);
+}
+.ScrollBar-Button__Active .PreventInherit {
+  transform: skewx(6deg);
+}
+
+
+
+@keyframes dropDownTop {
+  from {
+    top: -60px;
+    opacity: 0.5;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rollUpTop {
+  from {
+    transform: none;
+    opacity: 1;
+  }
+  to {
+    top: -60px;
+    opacity: 0.5;
+  }
+}
+
+
+.Marketplace {
+  padding: 0 15px;
+}

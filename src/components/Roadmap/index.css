@@ -1,0 +1,213 @@
+/* xxl */
+
+.Roadmap {
+  background-color: #3a264f;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.Roadmap-Container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.Roadmap-Tittle {
+  margin-top: calc(50vh - 380px);
+}
+.Gem-Background {
+  object-fit: contain;
+  object-position: left;
+  bottom: 0px;
+  width: 40%;
+  height: 85%;
+  position: absolute;
+}
+.Process-Wrapper {
+  position: relative;
+}
+.Process-Wrapper::before {
+  background-image: url(/public/photos/roadmap/progress.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.Process-Container {
+  position: relative;
+  width: calc(100% - 280px);
+  margin: 0 auto;
+  padding-bottom: 130px;
+}
+.Process-Timepoint {
+  display: flex;
+  flex-wrap: wrap;
+  transform: skewY(-16deg);
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: calc(100% - 35px);
+  justify-content: space-between;
+}
+.Timepoint-Wrapper {
+  width: calc(100% / 7);
+  transform: skewY(16deg);
+  color: white;
+  position: relative;
+  font-family: proxima nova th;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-bottom: 50px;
+}
+.Timepoint-Container {
+  width: 100%;
+  height: 100%;
+}
+.Timepoint-Mark {
+  background: linear-gradient(to bottom, #fff, transparent);
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 15px;
+}
+.Timepoint-Time {
+  font-size: 25px;
+}
+.Timepoint-Name {
+  color: #e44fff;
+  font-size: 18px;
+}
+.Arrow-Wrapper {
+  position: absolute;
+  right: 10px;
+  top: -170px;
+}
+.Arrow-Text {
+  color: #ff63fa;
+  font-family: proxima nova th;
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 120px;
+  bottom: 100px;
+  left: -70px;
+}
+.Arrow-Img {
+  height: 180px;
+}
+
+.Process-Timeline {
+}
+.Process-Timeline img {
+  width: 100%;
+}
+.Process-Item {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 35%;
+  left: 20px;
+  width: calc(100% - 35px);
+  transform: skewY(-16deg);
+  justify-content: space-between;
+  align-items: center;
+}
+.Item-Container {
+  width: calc(100% / 7);
+  transform: skewY(16deg);
+  color: white;
+  font-weight: 300;
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+}
+.Item-Bar {
+  display: flex;
+  flex-flow: row;
+  padding-bottom: 5px;
+}
+.Item-Text {
+  font-size: 16px;
+}
+.Item-Icon {
+  height: 20px;
+  width: 20px;
+}
+
+
+
+
+/* xl */
+@media (max-width: 1699px) {
+  .Roadmap-Tittle {
+    margin-top: calc(50vh - 350px);
+  }
+  .Process-Container {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    padding-bottom: 140px;
+  }
+  .Process-Timepoint {
+    top: 100px;
+  }
+  .Timepoint-Wrapper {
+    padding-left: 30px;
+    padding-bottom: 50px;
+  }
+  .Item-Text {
+    font-size: 14px;
+  }
+}
+
+/* lg */
+@media (max-width: 1199px) {
+  .Roadmap-Tittle {
+    margin-top: calc(50vh - 300px);
+  }
+  .Process-Container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding-bottom: 140px;
+  }
+  .Process-Timepoint {
+    top: 80px;
+  }
+  .Process-Timeline {
+    padding-bottom: 20px;
+  }
+  .Timepoint-Wrapper {
+    padding-left: 25px;
+    padding-bottom: 40px;
+  }
+  .Timepoint-Time {
+    font-size: 20px;
+  }
+  .Timepoint-Name {
+    font-size: 15px;
+  }
+  .Item-Text {
+    font-size: 14px;
+  }
+}
+
+/* md */
+@media (max-width: 991px) {
+  .Roadmap-Tittle {
+    margin-top: 200px;
+  }
+}
+
+/* sm */
+@media (max-width: 767px) {
+}
+
+/* xs */
+@media (max-width: 576px) {
+}

@@ -1,0 +1,114 @@
+@import "./components/utilities/index.css";
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("//db.onlinewebfonts.com/c/072dba30e1b38bff3de946769d357ba6?family=Proxima+Nova+Th");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: visible;
+  user-select: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+:root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Share Tech", sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.App-Slide-Container {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  align-items: center;
+}
+.Page {
+  height: 100vh;
+  width: 100vw;
+  max-width: 1800px;
+}
+.VideoBackground {
+  height: 100%;
+  width: 100%;
+  z-index: -99;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ImageBackground {
+  height: 100%;
+  width: 100%;
+}
+.MainTittle {
+  color: #e4f3ff;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #bde2ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 55px;
+  font-weight: 700;
+  font-family: proxima nova th;
+  text-align: center;
+  z-index: 98;
+}
+.MainDetail {
+  font-size: 15px;
+  font-size: 20px;
+  color: #f1f1f1;
+  padding: 0 15px;
+  text-align: center;
+  z-index: 98;
+}
+
+@media (max-width: 1699px) {
+  .MainTittle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .MainTittle {
+    font-size: 34px;
+  }
+  .MainDetail {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .App {
+    overflow: auto;
+  }
+  .VideoBackground {
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    position: static;
+  }
+  .MainDetail {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .MainTittle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .MainTittle {
+    font-size: 28px;
+  }
+  .MainDetail {
+    font-size: 13px;
+  }
+}

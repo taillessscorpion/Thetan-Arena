@@ -1,0 +1,117 @@
+.Gameplay {
+  background: linear-gradient(to bottom, #1f1436, #2f2477);
+  color: #fff;
+}
+.Gameplay-Background {
+  background: center / cover no-repeat
+    url("/public/photos/background/gameplay.png");
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.Gameplay-Tittle {
+  position: absolute;
+  top: calc(50vh - 450px);
+}
+.Gameplay-Detail {
+  position: absolute;
+  top: calc(50vh - 380px);
+}
+
+.Gameplay-SlideBox-Wrapper {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+.Gameplay-SlideBox {
+  
+}
+.Gameplay-SlideBox-Item-Wrapper {
+  height: 80%;
+}
+.Gameplay-SlideBox-Item-Container {
+  height: 100%;
+  position: relative;
+}
+.Gameplay-SlideBox-Item-Photo-Wrapper {
+  width: 70%;
+}
+.Gameplay-SlideBox-Item-Photo {
+  width: 100%;
+  z-index: 97;
+
+}
+.Gameplay-SlideBox-Item-BG {
+  height: 64%;
+  width: 65%;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+.Gameplay-SlideBox-Item-Info-Wrapper {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  width: 65%;
+  height: 64%;
+  display: flex;
+  justify-content: center;
+  z-index: 97;
+  padding: 50px 0px;
+}
+.Gameplay-SlideBox-Item-Info-Container {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10%;
+}
+.Gameplay-SlideBox-Item-Info-Symbol-Container {
+  height: 140px;
+  margin-bottom: 15px;
+}
+.Gameplay-SlideBox-Item-Info-Symbol {
+  max-width: 100%;
+  max-height: 100%;
+}
+.Gameplay-SlideBox-Item-Info-Name {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-family: proxima nova th;
+}
+
+.Gameplay-SlideBox-Item-Info-Type {
+  color: #ffd43c;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-family: proxima nova th;
+}
+
+.Gameplay-SlideBox-Item-Info-Text-Container {
+  margin-bottom: 20px;
+}
+.Gameplay-SlideBox-Item-Info-Text {
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.Gameplay-SlideBox-Item-Info-Button-Wrapper {
+}
+.Gameplay-WatchButton {
+  display: flex;
+  color: black;
+  align-items: center;
+  padding: 10px 45px;
+  font-family: proxima nova th;
+  font-size: 16px;
+  font-weight: 700;
+}
